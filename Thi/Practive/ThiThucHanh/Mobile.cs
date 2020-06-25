@@ -8,14 +8,14 @@ namespace Practive.ThiThucHanh
 {
     class Mobile:Product
     {
-        public Mobile(int id, string name, double price, string producert) : base(id, name, price, producert)
+        public Mobile(int id, string name, float price, string producert) : base(id, name, price, producert)
         {
             this.ID = id;
             this.Name = name;
             this.Price = price;
             this.Producert = producert;
         }
-        public override double ComputeTax(float x)
+        public override float ComputeTax(float x)
         {
             return this.Price = this.Price * x;
         }
